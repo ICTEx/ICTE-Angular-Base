@@ -1,0 +1,8 @@
+.home-bg {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  /*background-position: center center;*/
+  background-size: cover;
+  height: calc(100% - 110px);
+  margin-top: 110px;
+}

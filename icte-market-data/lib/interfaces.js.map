@@ -1,0 +1,1 @@
+{"version":3,"sources":["lib.js"],"names":["Object","exports"],"mappings":"k5CAAA,aACAA,MAAA,C,gBAAA,EAAsBC,OAAtB,C,YAAA,CAA6C,C,OAAE,C,IAAF,CAA7C","sourcesContent":["\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n"]}

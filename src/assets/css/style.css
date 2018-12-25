@@ -1,0 +1,102 @@
+/*=========================================================
+Author       : ICTE PANAMA
+Template Name: ICTE - ICO Landing Page HTML
+Version      : 1.0.0
+==============================================================*/
+@import 'styleHeader.css';
+/*===================================*
+GENERAL STYLE
+*===================================*/
+body {
+  background: #ffffff none repeat scroll 0 0;
+  font-family: 'Work Sans', Arial,  sans-serif;
+  color: #7a7a7a;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+p {
+  color:#7a7a7a;
+  margin-bottom:30px;
+}
+a {
+  color: #5687a2;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all .5s ease;
+}
+a:hover {
+  color: #ff69c9;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-input-placeholder {
+  color: #7a7a7a;
+  font-weight: 400;
+}
+:-moz-placeholder {
+  color: #7a7a7a;
+  font-weight: 400;
+}
+::-moz-placeholder {
+  color: #7a7a7a;
+  font-weight: 400;
+}
+:-ms-input-placeholder {
+  color: #7a7a7a;
+  font-weight: 400;
+}
+fieldset {
+  border: 0 none;
+  margin: 0 auto;
+  padding: 0;
+}
+section {
+  padding: 100px 0;
+  position:relative;
+}
+input {
+  border: 0;
+  padding: 10px 20px;
+  width: 100%;
+}
+.divider {
+  clear:both;
+  display:block;
+  height:20px;
+}
+.large_divider {
+  height:100px;
+}
+.small_divider {
+  height:50px;
+}
+.container,
+.container-fluid {
+  position: relative;
+  z-index: 5;
+}

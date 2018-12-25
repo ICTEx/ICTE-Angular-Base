@@ -1,0 +1,37 @@
+import { SymbolModel } from "./SymbolModel";
+export declare class Symbols {
+    private _origModel;
+    private _timerModel;
+    private _errorModel;
+    private _tableState;
+    private _utilityId;
+    private _benchmarkId;
+    constructor(origModel: SymbolModel[]);
+    readonly arr: SymbolModel[];
+    isBenchmarkState(): boolean;
+    getUtilityName(): string;
+    getBenchmarkName(): string;
+    getUtilityId(): number;
+    getBenchmarkId(): number;
+    getSymbolArray(): SymbolModel[];
+    getSymbolId(rowId: number): number;
+    getSymbolName(index: number): string;
+    changeSymbolStatus(index: any): void;
+    changeUtilitySymbol(index: number): void;
+    changeSymbolQty(index: any, qty: any): void;
+    getPrice(id: number): string;
+    getSize(id: number): string;
+    getBidPrice(rowId: number): string;
+    getAskPrice(rowId: number): string;
+    getBidSize(rowId: number): string;
+    getAskSize(rowId: number): string;
+    getUtilityBalance(): string;
+    getBenchmarkBalance(): string;
+    changeTableState: () => void;
+    changeBanchmark: (index: number) => void;
+    isSymbolEnabled: (index: number) => boolean;
+    enableSymbol: (index: number) => void;
+    disableSymbol: (index: number) => void;
+    changeSymbolQuantity: (index: number, value: number) => void;
+    update: () => Symbols;
+}
