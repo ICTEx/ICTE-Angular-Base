@@ -370,7 +370,7 @@ header {
 	height: 2px;
 	border-radius: 10px;
 	color: black;
-	background-color: white;
+	background-color: black;
 	position: absolute;
 	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
@@ -416,7 +416,7 @@ header #menu_mobile {
 	height: calc(100% - 80px);
 	position: fixed;
 	right:100%;
-	margin: 11px 0 0 0;
+	margin: 50px 0 0 0;
 	background: #ffffff;
 	overflow: scroll;
 	overflow-x: auto;
@@ -505,7 +505,7 @@ background: #ffffff;
 }
 
 header ::-webkit-scrollbar-thumb {
-    background: #FAFAFA; 
+    background: #FAFAFA;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

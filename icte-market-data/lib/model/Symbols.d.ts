@@ -19,6 +19,7 @@ export declare class Symbols {
     changeSymbolStatus(index: any): void;
     changeUtilitySymbol(index: number): void;
     changeSymbolQty(index: any, qty: any): void;
+    private padLeft;
     getPrice(id: number): string;
     getSize(id: number): string;
     getBidPrice(rowId: number): string;
@@ -28,7 +29,7 @@ export declare class Symbols {
     getUtilityBalance(): string;
     getBenchmarkBalance(): string;
     changeTableState: () => void;
-    changeBanchmark: (index: number) => void;
+    changeBenchmark: (index: number) => void;
     isSymbolEnabled: (index: number) => boolean;
     enableSymbol: (index: number) => void;
     disableSymbol: (index: number) => void;

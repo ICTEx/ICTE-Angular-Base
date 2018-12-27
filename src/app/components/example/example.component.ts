@@ -1,14 +1,18 @@
-import { Component, OnInit, AfterViewInit, AfterViewChecked } from '@angular/core';
-import { HeaderHomeComponent } from '../home/header-home/header-home.component';
-import { MarketDataService } from '../../services/market-data.service';
-import { ActionPanelService } from '../../services/action-panel.service';
-import { BaseComponent } from '../../base.components';
-import { Router } from '@angular/router';
+import {Component, OnInit, AfterViewInit, AfterViewChecked} from '@angular/core';
+import {HeaderHomeComponent} from '../home/header-home/header-home.component';
+import {ExampleActionPanelComponent} from '../example/example-action-panel/example-action-panel.component';
+import {MarketDataService} from '../../services/market-data.service';
+import {ActionPanelService} from '../../services/action-panel.service';
+import {BaseComponent} from '../../base.components';
+import {Router} from '@angular/router';
+import {FooterComponent} from '../footer/footer.component';
+import {HeaderComponent} from '../header/header.component';
+import {FooterHomeComponent} from '../home/footer-home/footer-home.component';
 
 @Component({
-  selector: "app-example",
-  templateUrl: "./example.component.html",
-  styleUrls: ["./example.component.css"]
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+  styleUrls: ['./example.component.css']
 })
 export class ExampleComponent extends BaseComponent
   implements OnInit, AfterViewInit, AfterViewChecked {
@@ -22,6 +26,8 @@ export class ExampleComponent extends BaseComponent
 
   ngOnInit() {
     this.apService.setHeader(HeaderHomeComponent);
+    this.apService.setActionPanel(ExampleActionPanelComponent);
+    this.apService.setFooter(FooterHomeComponent);
   }
 
   get s() {
@@ -29,17 +35,13 @@ export class ExampleComponent extends BaseComponent
   }
 
   ngAfterViewInit() {
-    this.s.changeSymbolStatus(1);
-    this.s.changeSymbolStatus(2);
-    this.s.changeSymbolStatus(3);
-    this.s.changeSymbolStatus(7);
-    this.s.changeSymbolStatus(8);
-    this.s.changeSymbolStatus(9);
-    this.s.changeSymbolStatus(10);
-                    }
+    for (let i = 0; i < this.s.arr.length; i++) {
+      this.s.changeSymbolStatus(i);
+    }
+  }
 
   ngAfterViewChecked() {
 //    console.log(this.s.arr[0].name);
- //   console.log(this.s.arr[0].price);
+    //   console.log(this.s.arr[0].price);
   }
 }

@@ -24,4 +24,5 @@ export declare abstract class APriceMsg extends Parser {
     getBenchId: () => number;
     parse: (view: DataView) => void;
     buffer: (deltaTime: number, symbolId: number, priceInt: number, priceFrac: number, sizeInt: number, sizeFrac: number, volumeInt: number, volumeFrac: number, venue: number, benchmark: number) => Buffer;
+    toString: () => string;
 }

@@ -10,7 +10,7 @@ export declare class Level1Msg extends Parser {
     static readonly Fld_AskInt: number;
     static readonly Fld_AskFrac: number;
     static readonly Fld_Venue: number;
-    static readonly Fld_Benchmark: number;
+    static readonly Fld_BenchId: number;
     static readonly Msg_Size: number;
     getDeltaTime: () => number;
     getId: () => number;
@@ -21,8 +21,9 @@ export declare class Level1Msg extends Parser {
     getAskInt: () => number;
     getAskFrac: () => number;
     getVenue: () => number;
-    getBenchmark: () => number;
+    getBenchId: () => number;
     parse: (view: DataView) => void;
     buffer: (deltaTime: number, symbolId: number, priceInt: number, priceFrac: number, bidInt: number, bidFrac: number, askInt: number, askFrac: number, venue: number, benchmark: number) => Buffer;
     constructor();
+    toString: () => string;
 }

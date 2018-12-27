@@ -270,4 +270,5 @@ export declare class PoloniexConstants {
     static readonly OPENEVENT: string;
     static readonly AMOUNT_ZERO: string;
     static readonly SUBSCRIBE: string;
+    static readonly DIV: number;
 }

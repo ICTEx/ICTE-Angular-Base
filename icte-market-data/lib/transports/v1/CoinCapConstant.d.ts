@@ -5,4 +5,5 @@ export declare class CoinCapConstant {
         "name": string;
     }[];
     static readonly SUBSCRIBE: string[];
+    static readonly DIV: number;
 }

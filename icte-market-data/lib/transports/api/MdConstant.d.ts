@@ -7,6 +7,9 @@ export declare class MdConstant {
     static readonly HtuSocketIoTransport = 0;
     static readonly PoloniexTransport = 1;
     static readonly CoinCapTransport = 2;
+    static readonly BinanceTransport = 3;
+    static readonly BitfinexTransport = 4;
+    static readonly HitBtcTransport = 5;
     static readonly USDT: number;
     static readonly HTU: number;
     static readonly BTC: number;
@@ -33,7 +36,7 @@ export declare class MdConstant {
     static readonly STRAT: number;
     static readonly SYS: number;
     static readonly XVG: number;
-    static readonly RADIX: number;
+    static readonly DLT: number;
     static readonly SYMBOLS: number[];
     static readonly COINS: string[];
     static readonly COINSID: {

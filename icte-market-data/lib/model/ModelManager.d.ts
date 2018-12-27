@@ -15,6 +15,7 @@ export declare class ModelManager {
     findSymbol: (symbol: string) => number;
     getUpdate: () => Symbols;
     setUpdate: (data: Parser) => void;
+    private getTime;
     private updateTime;
     private updateLockCalc;
     private updateCalc;

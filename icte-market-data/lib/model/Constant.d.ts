@@ -15,8 +15,14 @@ export declare class Constant {
     static readonly Sub_Price: number;
     static readonly Sub_Rate: number;
     static readonly Sub_Level1: number;
+    static readonly Msg_QuoteSubStr: string[];
     static readonly Msg_Position: number;
     static readonly Sub_PositionUpdate: number;
     static readonly Sub_PositionLock: number;
+    static readonly Msg_PositionSubStr: string[];
+    static readonly MsgTypesStr: string[];
     static readonly Mdl_SymbolModel: number;
+    static getMsgTypesStr(): string[];
+    static getPositionSubStr(): string[];
+    static getQuoteSubStr(): string[];
 }

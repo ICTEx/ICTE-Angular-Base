@@ -22,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FooterDirective } from './directives/footer.directive';
 import { FooterHomeComponent } from './components/home/footer-home/footer-home.component';
 import { ExampleComponent } from './components/example/example.component';
+import { ExampleActionPanelComponent } from './components/example/example-action-panel/example-action-panel.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { ExampleComponent } from './components/example/example.component';
     FooterDirective,
     FooterHomeComponent,
     ExampleComponent,
+    ExampleActionPanelComponent,
 
   ],
   imports: [
@@ -49,7 +51,7 @@ import { ExampleComponent } from './components/example/example.component';
     AppRoutingModule,
     InViewportModule,
      ],
-  entryComponents: [HeaderHomeComponent, FooterHomeComponent],
+  entryComponents: [HeaderHomeComponent, FooterHomeComponent, ExampleActionPanelComponent],
   providers: [MarketDataService, ActionPanelService, PersistanceService],
   bootstrap: [AppComponent]
 })

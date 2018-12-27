@@ -6,6 +6,7 @@ export declare class PriceModel {
     _sizeFrac: number;
     _venue: number;
     _benchId: number;
+    _time: number;
     constructor(id: number);
     wrap: (toModel: PriceModel) => void;
 }

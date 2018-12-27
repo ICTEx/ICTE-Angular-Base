@@ -5,11 +5,6 @@ export declare class PoloniexTransport implements MdTransport {
     private subscriptions;
     private _connected;
     private cb;
-    private subscribe;
-    /***
-     * Start Poloniex connection and events
-     */
-    private init;
     constructor(callback: MdCallback);
     private static getMsSinceMidnight;
     private static getGmtZeroNow;
@@ -20,4 +15,9 @@ export declare class PoloniexTransport implements MdTransport {
      * @param symbols
      */
     connect(symbols: number[]): void;
+    private subscribe;
+    /***
+     * Start Poloniex connection and events
+     */
+    private init;
 }
