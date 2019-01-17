@@ -9,10 +9,6 @@ export class ActionPanelService {
   @Output() headerEvent: EventEmitter<any> = new EventEmitter();
   @Output() footerEvent: EventEmitter<any> = new EventEmitter();
 
-  showComponent(data) {
-    //return this.change.emit(data);
-  }
-
   setActionPanel(component): void {
     return this.actionPanel.emit(component);
   }
@@ -25,20 +21,7 @@ export class ActionPanelService {
     return this.footerEvent.emit(component);
   }
 
-  destroyActionPanel(): void {
-   /*const aPData = {
-    'cfg' : {
-      'visible': false,
-      'closeable': true
-    },
-    'data' : null
-  }; */
-   // return this.actionPanel.emit(null);
-  }
-
   notification(obj) {
    this.calculatorNotification.emit(obj);
   }
-
-
 }

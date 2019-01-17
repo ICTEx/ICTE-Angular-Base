@@ -1,14 +1,47 @@
-<div>
+<section id="market-data">
   <div class="container">
-    <div class=row>
-      <div class="col-md-12"><h2>Example of display market data:</h2></div>
-      <div class="col-md-4" *ngFor="let row of s.getSymbolArray(); let rowId = index;">
-        <div>Symbol Name: {{s.getSymbolName(rowId)}}</div>
-        <div>Price: {{s.getPrice(rowId)}}</div>
-        <div>Ask Price: {{s.getAskPrice(rowId)}}</div>
-        <div>Bid Price: {{s.getBidPrice(rowId)}}</div>
-        <div>*********************************</div>
+    <div id="bench" class="row">
+      <div id="title" class="col-lg-8 col-md-12 col-sm-12">
+        <h2>Example of Display Market Data</h2>
       </div>
+      <div id="view" class="col-lg-2 col-md-12 col-sm-12">
+        <span id="date">{{getDateTime() | date:'medium' }}</span>
+      </div>
+      <table id="table-market-data" class="table">
+        <thead>
+        <tr>
+          <th scope="col" style="text-align: left;">Symbol</th>
+          <th scope="col">Benchmark</th>
+          <th scope="col">Price</th>
+          <th scope="col">Bid Price</th>
+          <th scope="col">Ask Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="{{getClassName(rowId)}}" *ngFor="let row of s.getSymbolArray(); let rowId = index;">
+          <td>
+            <div class="wtable">
+              <img src="assets/images/svg_color/{{getSymbolIcon(rowId)}}.svg">
+              <p>{{s.getSymbolName(rowId)}}</p>
+            </div>
+          </td>
+          <td>
+            <ng-container>{{s.getMsgBenchmarkName(rowId)}}</ng-container>
+          </td>
+          <td>
+            <ng-container>{{s.getPrice(rowId)}}</ng-container>
+          </td>
+          <td>
+            <ng-container>{{s.getBidPrice(rowId)}}</ng-container>
+          </td>
+          <td>
+            <ng-container>{{s.getAskPrice(rowId)}}</ng-container>
+          </td>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-</div>
+</section>
+
+

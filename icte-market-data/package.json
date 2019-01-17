@@ -2,7 +2,7 @@
   "name": "icte-market-data",
   "version": "1.0.0",
   "config": {
-    "releaseId": "icte-base",
+    "releaseId": "EF5AD70C7A1D485A9C68C0C258C62975",
     "branch": "master"
   },
   "description": "trade library",
@@ -16,9 +16,9 @@
     "copy": "XCOPY /S /y .\\lib\\*.* C:\\dev\\proj\\%npm_package_config_releaseId%\\%npm_package_config_branch%\\htu-angular-design-template\\icte-market-data\\lib\\ && XCOPY /S /y .\\test\\*.* C:\\dev\\proj\\%npm_package_config_releaseId%\\%npm_package_config_branch%\\htu-angular-design-template\\icte-market-data\\test\\ && XCOPY /y .\\package.json C:\\dev\\proj\\%npm_package_config_releaseId%\\%npm_package_config_branch%\\htu-angular-design-template\\icte-market-data",
     "copybin": "XCOPY /S /y .\\bin\\lib\\*.* C:\\dev\\proj\\%npm_package_config_releaseId%\\%npm_package_config_branch%\\htu-angular-design-template\\icte-market-data\\lib\\ && XCOPY /S /y .\\test\\*.* C:\\dev\\proj\\%npm_package_config_releaseId%\\%npm_package_config_branch%\\htu-angular-design-template\\icte-market-data\\test\\ && XCOPY /y .\\package.json C:\\dev\\proj\\%npm_package_config_releaseId%\\%npm_package_config_branch%\\htu-angular-design-template\\icte-market-data",
     "copydts": "XCOPY /S /y .\\lib\\*.d.ts .\\bin\\lib",
-    "obfuscate": "javascript-obfuscator ./lib --output ./bin --config ./obfuscatorCfg.json",
+    "obfuscate" : "javascript-obfuscator ./lib --output ./bin --config ./obfuscatorCfg.json",
     "deploy": "npm run build && npm run copy",
-    "deploybin": "npm run build && npm run obfuscate && npm run copydts && npm run copybin"
+    "deploybin" : "npm run build && npm run obfuscate && npm run copydts"
   },
   "keywords": [
     "trade",

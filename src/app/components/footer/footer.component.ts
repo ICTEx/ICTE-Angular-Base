@@ -1,6 +1,7 @@
 /*
  HTU Framework Action Panel Component
  Created by: Ytzvan Mastino - ym@htu.io
+ Copyright 2018-2019 HTU Technologies
 */
 import { Component, OnInit, ViewChild, HostListener, ComponentFactoryResolver, AfterViewChecked} from '@angular/core';
 import { Router } from '@angular/router';

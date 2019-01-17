@@ -12,13 +12,11 @@ export declare class BitfinexConstant {
     static readonly PINGTIME: number;
     static readonly MSG_CHANNEL_ID: number;
     static readonly MSG_BID: number;
-    static readonly MSG_BID_SIZE: number;
     static readonly MSG_ASK: number;
-    static readonly MSG_ASK_SIZE: number;
     static readonly MSG_LAST_PRICE: number;
-    static readonly MSG_VOLUME: number;
     static readonly pong = "{event:\"pong\"}";
     static readonly PAIRS: {
         [pair: string]: any;
     };
+    static readonly VALIDPAIRS: string[];
 }

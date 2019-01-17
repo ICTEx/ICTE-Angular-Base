@@ -1,0 +1,48 @@
+.logo_icon {
+	width: 100px;
+	margin-top: 5px !important;
+}
+.logo_htu {
+	width: 60px !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	color: #706F8E !important;
+	cursor: pointer;
+}
+@media only screen and (max-width:991px) {
+	.logo_htu {
+		margin-left: 80px;
+	}
+	.logo_icon {
+		width: 130px !important;
+		display: inline-block !important;
+		position: relative;
+	}
+	.menu_bar .bt-menu {
+		top: 10px;
+		margin-left: 0;
+	}
+	header #menu_mobile {
+		margin: 26px 0 0 0;
+	}
+}
+@media only screen and (max-width:320px) {
+	header .navbar a {
+		margin-top: 10px;
+	}
+	.logo_htu {
+		width: 40px !important;
+	}
+	.logo_icon {
+		width: 100px !important;
+		margin-top: 0 !important;
+	}
+}
+@media only screen and (max-width:270px) {
+	.logo_icon {
+		width: 90px !important;
+	}
+	.menu_bar .bt-menu {
+    top: 8px;
+}
+}

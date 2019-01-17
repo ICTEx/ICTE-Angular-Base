@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-example-action-panel',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleActionPanelComponent implements OnInit {
 
-  constructor() { }
+  constructor(private tref: ElementRef) {
+   }
 
   ngOnInit() {
+    //console.log(this.tref.nativeElement);
+
   }
 
 }

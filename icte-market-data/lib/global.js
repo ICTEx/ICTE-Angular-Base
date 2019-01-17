@@ -1,2 +1,0 @@
-
-//# sourceMappingURL=global.js.map

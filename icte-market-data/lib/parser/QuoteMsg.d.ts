@@ -29,4 +29,5 @@ export declare class QuoteMsg extends Parser {
     parse: (view: DataView) => void;
     buffer: (deltaTime: number, symbolId: number, bidInt: number, bidFrac: number, bidSizeInt: number, bidSizeFrac: number, askInt: number, askFrac: number, askSizeInt: number, askSizeFrac: number, venue: number, benchId: number) => Buffer;
     constructor();
+    toString: () => string;
 }

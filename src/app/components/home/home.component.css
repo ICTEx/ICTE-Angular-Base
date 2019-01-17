@@ -1,8 +1,199 @@
 .home-bg {
   background-color: #ffffff;
   background-repeat: no-repeat;
-  /*background-position: center center;*/
   background-size: cover;
-  height: calc(100% - 110px);
-  margin-top: 110px;
+ }
+
+
+section {
+  padding:0 !important;
 }
+
+/* HOME COMPONENT CSS */
+
+#logo-home img {
+  width:150px !important;
+  margin:auto !important;
+  margin-top:-200px !important;
+}
+
+.banner {
+  width: 100%;
+  height: 90%;
+  min-height: 600px !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bg_home {
+  background-position: center center !important;
+  background-size: cover !important;
+  opacity: 0.8 !important;
+  position: absolute !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.wrapper-banner-section {
+  position: relative;
+
+}
+
+.banner_home_left {
+  width: 78%;
+  padding: 0 0 0 20px;
+  margin-right: 2%;
+}
+
+.banner_home_right {
+  width: 20%;
+  padding: 0;
+}
+
+.banner_home_right img {
+  width: 200px;
+}
+
+.banner_home_text {
+  position: relative;
+}
+
+.banner_home h1 {
+  color: #706F8E;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-top:-100px !important;
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.banner_home h1 span{
+  color: #cfe9fa;
+}
+
+.home_sub_text {
+  color: #706F8E;
+  font-size: 40px;
+  font-weight: 700 !important;
+  margin: 30px 0;
+  margin-top:-50px !important;
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.arrow-banner-home {
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 50px;
+  float: left;
+  position: absolute;
+  left: 90px;
+  top: 10px;
+}
+
+.shadow {
+  box-shadow: 0 12px 15px #afafaf;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 992px) {
+  .banner-bg {
+    margin-top: 90px;
+    /*padding: 200px 0;*/
+  }
+
+  .banner_home {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .banner_home_left, .banner_home_right {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .banner-bg {
+    margin-top: 90px;
+    padding: 110px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .banner_home {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .banner-bg {
+    margin-top: 90px;
+    padding: 100px 0;
+  }
+
+  .banner_home_left {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .arrow-banner-home {
+    display: none;
+  }
+
+  .banner_home h1 {
+    font-size: 32px;
+    line-height: 45px;
+    text-indent: 0;
+    padding-left: 0;
+  }
+
+  .home_sub_text {
+    font-size: 20px
+  }
+
+  .banner_home_right {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .banner_home_right img {
+    width: 150px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-bg {
+    padding: 50px 0;
+  }
+
+  .home_sub_text {
+    font-size: 18px;
+    margin-top:-20px !important;
+  }
+
+}
+
+/*END RESPONSIVE*/
+
+/*END HOME COMPONENT CSS*/

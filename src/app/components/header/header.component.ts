@@ -1,6 +1,7 @@
 /*
  HTU Framework Action Panel Component
  Created by: Ytzvan Mastino - ym@htu.io
+ Copyright 2018-2019 HTU Technologies
 */
 import { Component, OnInit, ViewChild, HostListener, ComponentFactoryResolver, AfterViewChecked} from '@angular/core';
 import { Router } from '@angular/router';
@@ -25,22 +26,6 @@ export class HeaderComponent extends BaseComponent implements  OnInit, AfterView
       private resolver: ComponentFactoryResolver) {
       super(service, router);
     }
-
-
-    /*@HostListener('click',  ['$event'])
-    notification(e) {
-      let elem = e.target || e.srcElement || e.currentTarget;
-      let target = elem.getAttribute('data-target');
-      let params = [];
-      params.push(elem.getAttribute('data-params'));
-      let obj = {
-        'target': target,
-        'params': params
-      };
-      if (target) {
-        this.aPService.notification(obj);
-      }
-    }*/
 
     ngOnInit() {
       this.aPService.headerEvent.subscribe(component => {

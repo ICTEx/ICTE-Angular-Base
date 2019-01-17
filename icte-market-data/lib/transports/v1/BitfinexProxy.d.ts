@@ -5,7 +5,9 @@ export declare class BitfinexProxy extends EventEmiter {
     private wsState;
     private _keepAliveInterval;
     private _channels;
+    private readonly cid;
     constructor();
+    private utcTimeStamp;
     private subscribe;
     private chkInfoMsg;
     private processMsg;

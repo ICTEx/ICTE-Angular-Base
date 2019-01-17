@@ -14,12 +14,13 @@ export declare class Symbols {
     getUtilityId(): number;
     getBenchmarkId(): number;
     getSymbolArray(): SymbolModel[];
+    getMsgBenchmarkId(rowId: number): number;
+    getMsgBenchmarkName(rowId: number): string;
     getSymbolId(rowId: number): number;
     getSymbolName(index: number): string;
     changeSymbolStatus(index: any): void;
     changeUtilitySymbol(index: number): void;
     changeSymbolQty(index: any, qty: any): void;
-    private padLeft;
     getPrice(id: number): string;
     getSize(id: number): string;
     getBidPrice(rowId: number): string;

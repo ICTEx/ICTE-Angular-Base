@@ -4,15 +4,14 @@ Template Name: HTU
 Version      : 2.0.0
 ===================================*/
 
-(function ($) {
-  'use strict';
 
   /*===================================*
           MENU MOBILE JS
   /*===================================*/
 
-  $(function () {
-
+ 
+  /*$( document ).ready(function() {
+ 
 // slideMenu
     function slideMenu() {
       var activeState = $("#menu_mobile").hasClass("active");
@@ -25,6 +24,8 @@ Version      : 2.0.0
     }
 
 
+    
+    
     // change menu to close and open and overlay
     $(".menu_bar").click(function (event) {
       event.stopPropagation();
@@ -34,6 +35,8 @@ Version      : 2.0.0
       slideMenu();
 
     });
+
+
 
 
     //Hide Navbar Dropdown After Click On Links
@@ -49,7 +52,9 @@ Version      : 2.0.0
       }
     });
 
-  }); // jQuery load
 
 
-})(jQuery);
+  }); // jQuery load*/
+
+
+

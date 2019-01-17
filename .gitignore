@@ -9,6 +9,9 @@
 # dependencies
 /node_modules
 package-lock.json
+/icte-market-data/package-lock.json
+/icte-market-data/node_modules
+
 
 # IDEs and editors
 /.idea
@@ -42,4 +45,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-/icte-market-data/node_modules

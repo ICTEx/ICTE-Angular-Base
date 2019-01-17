@@ -1,6 +1,6 @@
 /**
  By: Marco A. Barragan @ ICTE
-  */
+ */
 import { MdTransport } from "../api/MdTransport";
 import { MdCallback } from "../api/MdCallback";
 export declare class HtuSocketIoTransport implements MdTransport {
@@ -14,6 +14,7 @@ export declare class HtuSocketIoTransport implements MdTransport {
     constructor(callback: MdCallback);
     isConnected: () => boolean;
     connect: (symbols: number[]) => void;
+    private setupIpFsClient;
     private setup;
     private subscribe;
 }

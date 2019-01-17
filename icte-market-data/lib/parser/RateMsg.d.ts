@@ -15,4 +15,5 @@ export declare class RateMsg extends Parser {
     getRateFrac(): number;
     parse(dataView: DataView): void;
     buffer(deltaTime: number, frontSymbolId: number, backSymbolId: number, rateInt: number, rateFrac: number): Buffer;
+    toString: () => string;
 }

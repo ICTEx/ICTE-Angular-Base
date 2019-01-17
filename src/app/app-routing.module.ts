@@ -3,9 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { ExampleComponent } from './components/example/example.component';
 
-
-
-
 const routes: Routes = [
     {
         path: '',
@@ -20,34 +17,11 @@ const routes: Routes = [
         path: 'example',
         component: ExampleComponent
     }
-    /*
-    {
-        path: 'dd',
-        component: DesktopLayoutComponent,
-        children: [
-                {
-                    path: '',
-                    component: DesktopTableChangeQuantityComponent
-                },
-                {
-                    path: 'change-qty',
-                    component: DesktopTableChangeQuantityComponent
-                },
-                {
-                    path: 'select-benchmark',
-                    component: DesktopTableSelectBenchmarkComponent
-                },
-                {
-                    path : 'log',
-                    component: DesktopLogComponent
-                }
-            ],
-        },*/
 ];
 
 @NgModule({
     declarations: [],
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'disabled'})],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
