@@ -1,6 +1,6 @@
  <p align="center">
    <a href="http://icte.io">
-     <img width="400" src="https://icte.io/assets/images/ip-1590_ictelogo.svg" alt="icte.io">
+     <img width="400" src="https://icte.io/assets/images/ip-1794_ictelogo.svg" alt="icte.io">
    </a>
  </p>
  <h1 align="center">ICTE Angular Base</h1>
