@@ -1,12 +1,18 @@
- <p align="center">
-   <a href="http://icte.io">
-     <img width="400" src="https://icte.io/assets/images/social/ip-1794_ictelogo-footer.svg" alt="icte.io">
+<p align="center">
+   <a href="http://htu.io" target="_blank">
+     <img height="100" src="https://htu.io/assets/images/ip-1794_htutoken.gif" alt="htu.io">
+   </a>
+   <a href="http://icte.io" target="_blank">
+     <img height="100" src="https://icte.io/assets/images/social/ip-1794_ictelogo-footer.svg" alt="icte.io">
    </a>
  </p>
  <h1 align="center">ICTE Angular Base</h1>
- <div align="center">
+ <h4 align="center">
  Develop real-time applications for the crypto community.
- </div>
+ </h4>
+
+## 👓 Preview
+[View our compiled version of ICTE Base here](http://www.thehtu.com/icte-base)
  
 ## 🔑 Features
 - Component Routing Implementation
