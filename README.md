@@ -10,9 +10,6 @@
  <h4 align="center">
  Develop real-time applications for the crypto community.
  </h4>
-
-## 👓 Preview
-[View our compiled version of ICTE Base here](http://www.thehtu.com/icte-base)
  
 ## 🔑 Features
 - Component Routing Implementation
