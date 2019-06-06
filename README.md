@@ -1,6 +1,4 @@
 <p align="center">
-   <a href="http://htu.io" target="_blank">
-     <img height="100" src="http://icbe.io/images/htutoken.gif" alt="htu.io">
    </a>
    <a href="http://icte.io" target="_blank">
      <img height="100" src="http://icbe.io/images/icte.png" alt="icte.io">
